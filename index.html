@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookmark Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <input type="checkbox" name="nav-menu-bar" id="nav-menu-bar" class="nav-bar-checkbox">
+            <input type="checkbox" name="nav-menu-bar" id="nav-menu-close" class="nav-close-checkbox">
+            <nav class="nav all-flex-row">
+                <section class="image-logo">
+                   
+                    <img src="./images/logo-bookmark.svg" alt="Logo">
+
+                    
+                    <label for="nav-menu-close" class="nav-menu-close">
+                        <img class="close-btn" src="./images/icon-close.svg" alt="icon-close">
+                    </label>
+                </section>
+
+                <label class="nav-menu-bar" for="nav-menu-bar">
+                    <img class="hamburger" src="./images/icon-hamburger.svg" alt="icon-hamburger">
+                </label>
+                <ul class="nav-items-container">
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <button class="btn1">Login</button>
+                    <button class="btn2" onclick="myFunction()"> Darkmode</button>
+                   
+                </ul>
+
+                <div class="social all-flex-row">
+                    <a href="" class="social-link"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a>
+                    <a href="" class="social-link">
+                        <img src="./images/icon-twitter.svg" alt="icon-twitter"></a>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <main class="all-flex-column">
+            <!-- Section 1 -->
+            <section class="intro layout hero">
+
+                <div class="first-part layout-typo all-flex-column">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite websites. Open a new
+                        browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="button-group">
+                        <button class="btn-general">Get it on Chrome</button>
+                        <button class="btn-general">Get it on Firefox</button>
+                    </div>
+                </div>
+
+                <div class="image-background">
+                    <!-- Image comes in here. -->
+                    <img src="./images/illustration-hero.svg" alt="">
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="features all-flex-column">
+
+                <!-- Sub-Sections in Section 2 -->
+                <section class="sub-sec-typo all-flex-column">
+                    <h3>features</h3>
+                    <p> Our aim is to make it quick and easy for you to access your favourite websites.
+                        Your bookmarks sync between your devices so you can access them on the go.</p>
+                </section>
+
+                <!-- The Navigation Selection slide. -->
+                <section class="nav-selection all-flex-row">
+                    <ul class="selection all-flex-row">
+                        <li onclick="display_tabs(0)" class="select-item">Simple Bookmarking</li>
+                        <li onclick="display_tabs(1)" class="select-item">Speedy Searching</li>
+                        <li onclick="display_tabs(2)" class="select-item">Easy Sharing</li>
+                    </ul>
+                </section>
+
+                <div class="tabs">
+
+                    <section class="layout tab-1">
+                        <div class="image-background2">
+                            <img src="./images/illustration-features-tab-1.svg" alt="">
+                         
+                        </div>
+
+                        <section class="layout-typo">
+                            <h3>Bookmark in one click</h3>
+                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                                gives you complete control over how you manage your favourite sites.</p>
+                            <button class="btn-general">More Info</button>
+                        </section>
+                    </section>
+
+                    
+                    <div class="layout tab-2 all-flex-row">
+                        <div class="image-background">
+                            <img src="./images/illustration-features-tab-2.svg" alt="tab-2-image">
+                        </div>
+
+                        <section class="layout-typo">
+                            <h3>Intelligent search</h3>
+                            <p>Our powerful search feature will help you find saved sites in no time at all.
+                                No need to trawl through all of your bookmarks.</p>
+                            <button class="btn-general">More Info</button>
+                        </section>
+                    </div>
+
+                    <div class="layout tab-3">
+                        <div class="image-background">
+                            <img src="./images/illustration-features-tab-3.svg" alt="tab-3-image">
+                        </div>
+
+                        <section class="layout-typo">
+                            <h3>Share your bookmarks</h3>
+                            <p> Easily share your bookmarks and collections with others. Create a shareable
+                                link that you can send at the click of a button.</p>
+                            <button class="btn-general">More Info</button>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            
+    </div>
+    <section class="pre-footer">
+        <img src="./images/icon-arrow-down.svg" alt="">
+        <div class="pre-footer-content all-flex-column">
+
+            
+
+            <h2>Stay up-to-date with what we're doing</h2>
+
+            <div class="form">
+                <form class="all-flex-row" action="#" id="form">
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                        
+                    </div>
+                    <button class="btn1">
+                        Contact Us
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- THE FOOTER -->
+    <footer class="footer all-flex-column">
+        <section class="footer-container all-flex-row">
+            <div class="details-footer all-flex-row">
+
+                <section class="footer-image-logo">
+                    <!-- Logo comes here -->
+                    <img src="./images/footer-logo.svg" alt="">
+                </section>
+
+                <ul class="footer-nav all-flex-row">
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">Features</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">Pricing</a></li>
+                    <li class="footer-nav-item"><a href="#" class="footer-nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social all-flex-row">
+                <img src="./images/icon-facebook.svg" alt="icon-facebook">
+                <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+        </section>
+    </footer>
+
+    
+    <script src="./tabs.js"></script>
+    <script src="./darkMode.js"></script>
+    
+    
+
+
+
+
+   
+</body>
+
+</html>
